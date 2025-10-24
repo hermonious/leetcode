@@ -1,12 +1,7 @@
 
 
 
-
-import java.util.List;
-
 /**
- * LeetCode 120. 三角形最小路径和（Triangle）
- * 
  * 给定一个三角形 triangle，找出自顶向下的最小路径和。
  * 每一步只能移动到下一行中相邻的节点上。
  * 相邻的节点在这里指的是下标与上一层节点下标相同或者加一的两个节点。
@@ -19,9 +14,9 @@ import java.util.List;
  *     • 否则：dp[i][j] = min(dp[i-1][j-1], dp[i-1][j]) + triangle[i][j]
  * - 初始状态：dp[0][0] = triangle[0][0]
  * - 结果：最后一行中的最小值
- * 
- * 时间复杂度：O(n²)，空间复杂度：O(n²)，其中 n 为三角形行数
  */
+import java.util.List;
+
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         
