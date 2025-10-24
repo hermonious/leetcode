@@ -98,10 +98,16 @@ PriorityQueue 实现原理
     TreeSet 支持有序遍历和任意元素删除（O(log n)），但内存开销更大。
 
 
-PriorityQueue的常用方法，不包含实现了Queue<E>、Collection<E>、Iterator<E>等接口的方法
+PriorityQueue的常用方法
 
-    boolean offer(E e)    尾插
+    实现Queue<E>接口的
+        boolean offer(E e)    尾插
+        E peek()              查看队熟元素
+        E poll()              队首元素出队
 
-    E peek()              查看队熟元素
-    E poll()              队首元素出队
+    自己独有的唯一公共方法
+        Comparator<? super E> comparator()
+
+
+    继承Collection<E>和其他接口的方法不在此罗列了
 
