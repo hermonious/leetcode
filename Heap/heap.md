@@ -40,15 +40,18 @@
 
 
 
-Java 提供了类型 PriorityQueue 实现数据结构堆。PriorityQueue 在默认情况下是一个 “最小堆”，如果使用最大堆调用构造函数就需要传入 Comparator 改变比较排序的规则。PriorityQueue 实现了接口 Queue。PriorityQueue 的删除顺序与元素添加的顺序无关。 
-常用方法：
-    抛出异常        不抛出异常
-    add(e)         offer(e)
-    remove()       poll()
-    element()      peek()
+    Java 提供了类型 PriorityQueue 实现数据结构堆
+    PriorityQueue 在默认情况下是一个 “最小堆”，如果使用最大堆调用构造函数就需要传入 Comparator 改变比较排序的规则
+    PriorityQueue 实现了接口 Queue
+    PriorityQueue 的删除顺序与元素添加的顺序无关
+    常用方法：
+        抛出异常        不抛出异常
+        add(e)         offer(e)
+        remove()       poll()
+        element()      peek()
 
 
-堆经常用来解决在数据集合中找出 k 个最大值或最小值相关的问题。通常用最大堆找出数据集合中的 k 个最小值，用最小堆找出数据集合中的 k 个最大值。
+        堆经常用来解决在数据集合中找出 k 个最大值或最小值相关的问题。通常用最大堆找出数据集合中的 k 个最小值，用最小堆找出数据集合中的 k 个最大值。
 
-Java 的库中提供了类型 PriorityQueue，虽然该类型实现了接口 Queue，但它是堆而不是队列。
-PriorityQueue 的构造函数能 ‘传入不同的比较规则’ ，从而创建最大堆或最小堆。
+        Java 的库中提供了类型 PriorityQueue，虽然该类型实现了接口 Queue，但它是堆而不是队列。
+        PriorityQueue 的构造函数能 ‘传入不同的比较规则’ ，从而创建最大堆或最小堆。
