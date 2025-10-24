@@ -44,21 +44,26 @@ class Solution {
 
     
     // 迭代代码
-    // public int findPath(int m, int n) {
-
+    // public int uniquePaths(int m, int n) {
     //     int[][] dp = new int[m][n];
+    
+    // // 初始化第一行
     //     Arrays.fill(dp[0], 1);
-
+    
+    // // 初始化第一列
     //     for (int i = 1; i < m; i++) {
     //         dp[i][0] = 1;
     //     }
+    
+    // // 填充其余格子
     //     for (int i = 1; i < m; i++) {
     //         for (int j = 1; j < n; j++) {
-    //             dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
+    //             dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
     //         }
     //     }
     //     return dp[m - 1][n - 1];
     // }
+
 
 
     
