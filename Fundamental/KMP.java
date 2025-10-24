@@ -1,14 +1,14 @@
 // 在主串 text 中查找模式串 pattern 是否存在，返回第一个匹配位置的索引（如不存在返回 -1）
 
 
-public class KMP {
 
-    /**
-     * KMP 算法主函数：在 text 中查找 pattern 第一次出现的位置
-     * @param text 主串
-     * @param pattern 模式串
-     * @return 第一次匹配的起始索引，未找到返回 -1
-     */
+/**
+* KMP 算法主函数：在 text 中查找 pattern 第一次出现的位置
+* @param text 主串
+* @param pattern 模式串
+* @return 第一次匹配的起始索引，未找到返回 -1
+*/
+public class KMP {
     public static int kmpSearch(String text, String pattern) {
         if (pattern.isEmpty()) return 0;
         if (text.isEmpty()) return -1;
@@ -40,11 +40,6 @@ public class KMP {
         }
         return -1; // 未找到匹配
     }
-
-
-
-
-
 
     /**
      * 构建 next 数组（LPS 数组）
