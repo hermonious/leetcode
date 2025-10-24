@@ -7,11 +7,7 @@
 // 例如，输入字符串"aaba"，至少需要分割 1 次，从两个相邻字符'a'中间切一刀将字符串分割成两个回文子字符串"a"和"aba"
 
 
-
 public class _7minSlice {
-    
-
-
     public int slice(String s) {
 
         int len = s.length();
