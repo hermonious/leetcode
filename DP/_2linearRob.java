@@ -1,9 +1,9 @@
-import java.util.Arrays;
+
 
 // 输入一个数组表示某条街道上的一排房屋内财产的数量。如果这条街道上相邻的两幢房屋被盗就会自动触发报警系统。请计算小偷在这条街道上最多能偷取到多少财产。
 // 例如，街道上 5 幢房屋内的财产用数组[2, 3, 4, 5, 3]表示，如果小偷到下标为 0、2 和 4 的房屋内盗窃，那么他能偷取到价值为 9 的财物，这是他在不触发报警系统的情况下能偷取到的最多的财物
 
-
+import java.util.Arrays;
 
 public class _2linearRob {
     // f(i) = max(f(i-2) + nums[i], f(i-1))
@@ -19,7 +19,6 @@ public class _2linearRob {
         helper(nums, nums.length - 1, dp);
         return dp[nums.length - 1];
     }
-
 
     private void helper(int[] nums, int i, int[] dp) {
         
@@ -37,7 +36,7 @@ public class _2linearRob {
 
 
 
-
+    
     // 空间复杂度O(n)的迭代
     public int roB(int[] nums) {
         if (nums.length == 0) {
