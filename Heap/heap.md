@@ -97,3 +97,11 @@ PriorityQueue 实现原理
     PriorityQueue 只能高效访问堆顶，不能快速查找或删除任意元素；
     TreeSet 支持有序遍历和任意元素删除（O(log n)），但内存开销更大。
 
+
+全部方法，实现了Queue<E>、Collection<E>、Iterator<E>接口
+
+    boolean offer(E e)    尾插
+
+    E peek()              查看队熟元素
+    E poll()              队首元素出队
+
