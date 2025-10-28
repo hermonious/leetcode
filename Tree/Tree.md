@@ -40,16 +40,16 @@ BST是一类特殊的二叉树，它的左子节点总是小于或等于根节�
 TreeSet 实现了接口 Set，它内部的平衡二叉树中的每个节点只包含一个值
 除了Set的常用函数，TreeSet还有以下常用函数：
     
-    ceiling    
-    floor      
-    higher    
-    lower      
+    ceiling(E)    
+    floor(E)      
+    higher(E)    
+    lower(E)      
 
 
 TreeMap 内部的平衡二叉搜索树中的每个节点都是一个包含键值和值的映射
 除了Map的常用函数，TreeMap还有以下常用函数：
     
-    ceilingEntry     
-    floorEntry       
-    higherEntry      
-    lowerEntry     
+    ceilingEntry(K)     
+    floorEntry(K)       
+    higherEntry(K)      
+    lowerEntry(K)     
