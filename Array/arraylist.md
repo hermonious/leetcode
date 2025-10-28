@@ -16,7 +16,8 @@ ArrayList 实现原理
     与 LinkedList 对比：ArrayList 内存更紧凑、缓存更友好，绝大多数场景性能更优。
     
     
-    所有方法：
+ArraysList的所有方法
+
         int size()
         int hashCode()
         int indexOf(Object o)
@@ -60,10 +61,21 @@ ArrayList 实现原理
         <T> T[] toArray(T[] a)
         Object clone()
         
-       
+
+Arrays的常用方法
+
+    asList()
+    binarySearch()
+    compare()
+    copyOf(Range)()
+    equals()
+    fill()
+    hashCode()
+    toString()
     
 
 典型使用场景
+    
     1.模拟动态数组
     2.模拟栈
     3.实现前缀和数组（prefix sum）
